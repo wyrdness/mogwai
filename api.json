@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/mogwai",
     "maintainers": [
       {
@@ -16,72 +16,118 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "mogwai",
-    "name": "Mogwai (魔怪)",
-    "aliases": [],
-    "category": "ENCOMPASSES_DIVERSE_PHYSICAL_FORMS._HOWEVER,_CERTAIN_COMMON_CHARACTERISTICS_APPEAR_ACROSS_MANY_ACCOUNTS:",
-    "subcategory": "Unknown",
+    "name": "Mogwai",
+    "aliases": [
+      { "name": "魔鬼", "language": "Cantonese (Chinese)", "meaning": "demon, devil, evil spirit" },
+      { "name": "Mógui", "language": "Mandarin Chinese", "meaning": "demon" },
+      { "name": "Mogwai", "language": "Cantonese romanisation", "region": "Hong Kong / Cantonese-speaking areas" }
+    ],
+    "category": "ENTITY_SPIRIT",
+    "subcategory": "Demonic / malevolent spirit",
     "tags": [
-      "folklore",
-      "mythology"
+      "demon",
+      "spirit",
+      "chinese-folklore",
+      "buddhist-influence",
+      "evil-spirit"
     ],
     "status": "documented",
     "description": {
-      "summary": "The mogwai (魔怪, mó guài) represents a category of demons and mischievous supernatural entities in traditional Chinese folklore, distinct from and predating the popular 1984 American film that borrowed the name.",
-      "full": "The mogwai (魔怪, mó guài) represents a category of demons and mischievous supernatural entities in traditional Chinese folklore, distinct from and predating the popular 1984 American film that borrowed the name. In Chinese demonology, mogwai literally translates to \\\"demon\\\" or \\\"strange creature,\\\" with 魔 (mó) meaning \\\"demon/evil spirit\\\" and 怪 (guài) meaning \\\"strange/monster.\\\" These entities encompass a broad classification of malevolent or troublesome spirits that plague humans, cause misfortune, and disrupt the natural order. Unlike the cute, furry creatures depicted in Western popular culture, traditional Chinese mogwai are genuinely dangerous supernatural beings associated with demonic forces, spiritual pollution, and cosmic imbalance. They occupy an important position in Chinese cosmology, representing the chaotic and harmful forces that stand in opposition to order, virtue, and harmony. Understanding mogwai requires situating them within the complex framework of Chinese religion, which blends Confucian ethics, Daoist cosmology, Buddhist metaphysics, and folk traditions. The term mogwai functions both as a specific category of demon and as a general descriptor for various troublesome supernatural entities. In classical Chinese literature, mogwai appear in countless tales of the supernatural, serving as antagonists that test human virtue, wisdom, and spiritual strength. They represent the ever-present threat of supernatural chaos breaking into the ordered human world. In traditional Chinese thought, the universe maintains a delicate balance between opposing forces—yin and yang, heaven and earth, order and chaos. Mogwai represent disruptions to this balance, embodiments of excessive yin energy, demonic qi (氣), or corrupted spiritual essence. Their existence serves as both a warning and a teaching tool, illustrating the consequences of moral failure, spiritual weakness, or cosmic imbalance."
+      "summary": "Mogwai (魔鬼, Cantonese mō gwái) is a Chinese term for demons, devils, or evil spirits, denoting a category of malevolent supernatural beings in Chinese folk and religious traditions.",
+      "full": "Mogwai is the Cantonese romanisation of the Chinese 魔鬼 (Mandarin mógui), a term used in Chinese folk religion, popular Buddhism, and Daoism for demons, devils, or malevolent spirits. The first character 魔 (mó) derives ultimately from the Sanskrit māra (मार), originally meaning 'death' or 'evil being', a term that entered Chinese with the spread of Buddhism. The second character 鬼 (gui) refers to ghosts or spirits, particularly the souls of departed beings. In Chinese tradition mogwai (mógui) are commonly distinguished from neighbouring categories: yāoguài (妖怪, goblins or sprites associated with abnormal phenomena), guǐ (鬼, ghosts), and guài (怪, strange phenomena). Mogwai broadly denotes demonic adversaries, including beings adopted from Indian Buddhism such as yakshas (yecha 夜叉) and rakshasas (luocha 罗刹), which appear extensively in classical literature including Pu Songling's Strange Tales from a Chinese Studio (Liaozhai zhiyi) and the Ming-dynasty novel Investiture of the Gods (Fengshen Yanyi). The English-language word 'mogwai' was popularised in the Western world by the 1984 Joe Dante film Gremlins, which used the term for its furry creatures; that usage is a borrowing of the Chinese name and not the traditional Chinese referent."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "Cantonese romanisation of Chinese 魔鬼; the character 魔 (mó) derives from Sanskrit māra ('death' / 'evil being'), entering Chinese through Buddhist scripture translation.",
+      "meaning": "Demon, devil, evil spirit (literally 'evil ghost').",
+      "first_use": "The compound 魔鬼 has been used in Chinese-Buddhist contexts since at least the medieval period; the romanisation 'mogwai' is a 20th-century Cantonese-English convention popularised in the West by Gremlins (1984)."
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "ENCOMPASSES_DIVERSE_PHYSICAL_FORMS._HOWEVER,_CERTAIN_COMMON_CHARACTERISTICS_APPEAR_ACROSS_MANY_ACCOUNTS:",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "ENTITY_SPIRIT",
+      "type": "Demon / evil spirit",
+      "subtype": "Chinese demonic class",
+      "variant": "Folk and Buddhist tradition"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "yaoguai", "name": "Yaoguai", "relationship": "related", "description": "Chinese category of goblins / sprites (妖怪)" },
+      { "id": "ghosts", "name": "Gui (ghosts)", "relationship": "related", "description": "Chinese class of disembodied spirits (鬼)" },
+      { "id": "rakshasa", "name": "Rakshasa", "relationship": "subset", "description": "Indian-origin man-eating demon (luocha 罗刹) absorbed into Chinese demonology" },
+      { "id": "demons", "name": "Demons", "relationship": "superset", "description": "Cross-cultural category of malevolent spirits" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["red", "blue", "yellow (in some yecha descriptions)"],
+      "features": [
+        { "feature": "Variable form", "description": "Mogwai have no single fixed appearance; classical sources describe them taking many shapes appropriate to their type", "frequency": "always" },
+        { "feature": "Wings (some yecha)", "description": "Air-traversing yecha (yakshas) are described as winged with red, blue, or yellow complexions", "frequency": "occasional" },
+        { "feature": "Large stature (earth-traversing yecha)", "description": "Earth-traversing yecha are described as several metres tall with distinctive markings", "frequency": "occasional" }
+      ],
+      "morphology": "No single fixed morphology; mogwai is a category that includes a range of demonic forms drawn from indigenous Chinese tradition and from Buddhist sources of Indian origin."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Spiritual harm", "description": "Believed to afflict humans with misfortune, illness, or moral corruption", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Shapeshifting", "description": "In classical tales (e.g. Liaozhai zhiyi) demonic beings often take human form to deceive mortals", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Reproduction in rain", "description": "Some folk traditions hold that rain-demons mate during seasonal rainfall, taken as a sign of prosperity", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "variable",
+      "disposition": "aggressive",
+      "social_structure": "variable",
+      "habitat_preference": ["wild and uninhabited places", "ruins", "graveyards", "the spirit world"],
+      "patterns": [
+        "Tempt and afflict humans, particularly the morally weak",
+        "Appear in literary tales as antagonists testing virtue",
+        "Inhabit boundaries between human and wild / between living and dead worlds"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Mogwai are part of the broad Chinese demonological tradition and appear throughout Chinese-speaking cultures and the Sinosphere (where Chinese Buddhism and Daoism shaped local folklore).",
+      "continents": ["Asia"],
+      "countries": ["China", "Hong Kong", "Taiwan", "Singapore", "Malaysia"],
+      "regions": [
+        "Chinese-speaking world",
+        "Cantonese-speaking regions",
+        "Sinosphere (Vietnam, Korea, Japan via Buddhist transmission)"
+      ]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Medieval Chinese Buddhist texts",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Buddhist sutra translations into Chinese"
+      },
+      "peak_activity_periods": [
+        { "period": "Ming and Qing dynasties", "description": "Major literary period for tales of demons and supernatural encounters, including Pu Songling's Liaozhai zhiyi and Investiture of the Gods" }
+      ]
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Chinese folk religion, Daoism, and Chinese Buddhism. The character 魔 (mó) was adopted to render the Sanskrit māra in Buddhist translation.",
+      "earliest_accounts": "Mogwai-class beings (especially yecha and luocha) appear in Chinese-language Buddhist scripture and in literary tales from the medieval period onward.",
+      "folklore_connections": "Connected to Indian Buddhist demonology (yakshas, rakshasas) and to indigenous Chinese categories of spirits (gui, yaoguai, guai)."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "Medieval", "event": "Sanskrit māra rendered as Chinese 魔; absorbed into Chinese-language Buddhist scripture and demonology", "significance": "Establishes the term and concept of mogui in Chinese", "source": "Wikipedia: Mogwai (Chinese culture)" },
+      { "date": "Ming dynasty", "event": "Yecha and luocha appear prominently in Investiture of the Gods (Fengshen Yanyi)", "significance": "Demons enter major Chinese popular literature", "source": "Wikipedia: Mogwai (Chinese culture)" },
+      { "date": "Qing dynasty", "event": "Pu Songling's Strange Tales from a Chinese Studio (Liaozhai zhiyi) collects many tales of demonic encounters", "significance": "Canonical Chinese supernatural literature", "source": "Wikipedia: Mogwai (Chinese culture)" },
+      { "date": "1984", "event": "Joe Dante's film Gremlins introduces 'mogwai' as a name for furry creatures, popularising the Chinese word in the English-speaking world", "significance": "Western popular-culture borrowing of the term", "source": "Wikipedia: Gremlins (film)" }
+    ],
+    "modern_era": "In contemporary Chinese-language usage 魔鬼 (mogui / mogwai) remains a common word for 'demon' or 'devil' in religious, literary, and metaphorical contexts. In English the word is most strongly associated with the 1984 film Gremlins and its derivatives, which is a Western re-borrowing rather than a faithful representation of Chinese folklore."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +138,75 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Traditional Chinese demonology",
+        "description": "In Chinese folk religion, Daoism and Buddhism, mogwai are real malevolent spiritual beings to be guarded against through ritual, virtuous conduct and protective practice.",
+        "proponents": ["Chinese folk religious practitioners", "Buddhist and Daoist traditions"],
+        "evidence_cited": ["Buddhist scripture", "Classical literary tales", "Living ritual tradition"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Cultural and literary construct",
+        "description": "From a secular perspective mogwai are figures of religion and literature rather than empirical entities; the category functions as a shared symbolic vocabulary for danger, moral failure, and the wild.",
+        "proponents": ["Academic folklorists and religious-studies scholars"],
+        "evidence_cited": ["No empirical evidence for spirits", "Documented evolution of the term within textual tradition"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Chinese folk religious demonology",
+        "Daoist exorcism and protective ritual",
+        "Chinese Buddhist demonology"
+      ],
+      "stories": [
+        "Tales from Pu Songling's Liaozhai zhiyi (Strange Tales from a Chinese Studio)",
+        "Episodes from Investiture of the Gods (Fengshen Yanyi)"
+      ],
+      "beliefs": "Mogwai represent real malevolent forces in Chinese folk and religious thought, to be countered by virtuous conduct, Buddhist or Daoist ritual, and protective talismans."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Liaozhai zhiyi (Strange Tales from a Chinese Studio) — Pu Songling (Qing dynasty)",
+        "Fengshen Yanyi (Investiture of the Gods) — Ming dynasty"
+      ],
+      "film_tv": [
+        "Gremlins (1984, dir. Joe Dante)",
+        "Gremlins 2: The New Batch (1990)",
+        "Gremlins: Secrets of the Mogwai (2023, animated)"
+      ],
       "games": [],
+      "music": [
+        "Mogwai (Scottish post-rock band, named after the term)"
+      ],
       "other": []
     }
   },
+
   "research": {
     "researchers": [],
     "organizations": [],
-    "ongoing_studies": "None documented"
+    "ongoing_studies": "Mogwai are studied as part of academic Chinese religion, folklore and literature scholarship rather than cryptozoology."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-mogwai-chinese", "type": "website", "title": "Mogwai (Chinese culture)", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Mogwai_(Chinese_culture)", "accessed": "2026-05-07" },
+    { "id": "wikipedia-gremlins-film", "type": "website", "title": "Gremlins (film)", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Gremlins", "accessed": "2026-05-07" }
+  ]
 }
